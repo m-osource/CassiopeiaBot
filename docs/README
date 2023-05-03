@@ -10,19 +10,19 @@ Before proceeding with the development of CassiopeiaBot, all possible bug fixes 
 Here are the new features:
 • Multithreading.
 • Object-oriented C++ language.
-• UTF-8 multibyte characters and language detection.
-• PDF, XML pages parsing.
-• Sitemap RDF and XML pages parsing.
 • HTTPS protocol and HTTP compression.
-• Interactive console cbot-info-shell with auto-complete function to consult crawler metadata and plain text of downloaded web pages.
+• Parsing of PDF, FEED/ATOM and FEED/RSS.
+• UTF-8 multibyte characters and language detection.
+• Analysis of sitemap files written in RDF/XML format.
 • Thematic (IT) detection of web pages in order to assign an appropriate score.
+• Interactive console cbot-info-shell with auto-complete function to consult crawler metadata and plain text of downloaded web pages.
 
 List of some improvements or changes.
-• Improvements for robots.txt files.
 • Improvements for "Chunked Transfer Encoding".
 • C-Ares libray https://c-ares.org/ in place of ADNS.
 • Strict control of URL rewrite loops during downloads.
 • Gatherer process "integrated" into the Harvester process.
+• Improvements for correct interpretation of robots TXT/RDF/XML files.
 • Domain names and keywords split only if the result is related to the document content.
 • More score and frequent downloads of constantly updated web pages (Local Sensitive Hashing).
 • Less relevance to web documents that contain many hypertext links in the face of little content.
