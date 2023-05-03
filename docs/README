@@ -1,0 +1,47 @@
+CassiopeiaBot is a HTTP/1.1 Multithread Text Web Crawler for Linux.
+
+It is a fork of the WIRE-Nic open source project which is itself a fork of the WIRE open source project
+(Web Information Retrieval Environment) that was developed by Center for Web Research from University of Chile.
+More information about it can be found at  http://www.cwr.cl/projects/WIRE/ and https://sourceforge.net/projects/wire-nic/.
+
+It has been customized to be a selective crawler for geographical area (Sardinia - Italy -) but it is also possible to make it behave differently.
+Before proceeding with the development of CassiopeiaBot, all possible bug fixes were applied to the software and for technical reasons, some features have been disabled from the original project.
+
+Development always proceeded with tools like Gdb and Valgrind.
+
+Here are the new features:
+• Multithreading.
+• Object-oriented C++ language.
+• UTF-8 multibyte characters and language detection.
+• PDF, XML pages parsing.
+• Sitemap RDF and XML pages parsing.
+• HTTPS protocol and HTTP compression.
+• Interactive console cbot-info-shell with auto-complete function to consult crawler metadata and plain text of downloaded web pages.
+• Thematic (IT) detection of web pages in order to assign an appropriate score.
+
+List of improvements or changes.
+• Connector indexes the contents in the OpenSource C++ Sphinx Search Engine (https://sphinxsearch.com/).
+• Converting indexes (Linear Probing) and data storages from single to distributed in order to work in multithread.
+• Gatherer process "integrated" into the Harvester process.
+• The Pagerank and Siterank (multithreaded) algorithms respectively reduce the score of pages and sites reached through the same second-level domain in order to improve the quality of search engine results.
+• More score to web pages that change contents frequently.
+• Less relevance to web documents that contain many hypertext links in the face of little content.
+• C-Ares libray https://c-ares.org/ in place of ADNS.
+• Improvements for robots.txt files.
+• Improvements for "Chunked Transfer Encoding".
+• Optimized and modified html4 parser (html5 beta) to convert downloaded web pages into plain text, in order to greatly increase the overall performance of the search engine.
+• Text analysis to send at the search engine the terms with a different score according to their position on the web page or the type of html tags in which they are enclosed.
+• Strict control of URL rewrite loops during downloads.
+• Make more frequent downloads of constantly updated web pages (Local Sensitive Hashing).
+
+The code was developed always using tools like Gdb and Valgrind to avoid making mistakes like:
+- memory leaks
+- dangling pointers
+- buffer overflow
+
+The project was discontinued in 2017 but successfully tested several times until 2016 under a Fedora 23 distro, unfortunately there was no time to add features reported in the TODO file.
+
+CassiopeiaBot has been optimized to search almost exclusively for sites in Sardinia, so don't be surprised if you find terms like sardinia, shardana, nuraghe and so on.
+It will be necessary to dedicate oneself to update some parts of the code to the new libraries and integrate the new functions according to the changes in the WEB that have taken place in recent years.
+ 
+Marco <workwheat09@gmail.com>
