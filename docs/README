@@ -5,9 +5,7 @@ It is a fork of the WIRE-Nic open source project which is itself a fork of the W
 More information about it can be found at  http://www.cwr.cl/projects/WIRE/ and https://sourceforge.net/projects/wire-nic/.
 
 It has been customized to be a selective crawler for geographical area (Sardinia - Italy -) but it is also possible to make it behave differently.
-Before proceeding with the development of CassiopeiaBot, all possible bug fixes were applied to the software and for technical reasons, some features have been disabled from the original project.
-
-Development always proceeded with tools like Gdb and Valgrind.
+Before proceeding with the development of CassiopeiaBot, all possible bug fixes were applied to the software and for technical reasons some features have been disabled from the original project.
 
 Here are the new features:
 • Multithreading.
@@ -19,20 +17,20 @@ Here are the new features:
 • Interactive console cbot-info-shell with auto-complete function to consult crawler metadata and plain text of downloaded web pages.
 • Thematic (IT) detection of web pages in order to assign an appropriate score.
 
-List of improvements or changes.
-• Connector indexes the contents in the OpenSource C++ Sphinx Search Engine (https://sphinxsearch.com/).
-• Converting indexes (Linear Probing) and data storages from single to distributed in order to work in multithread.
-• Gatherer process "integrated" into the Harvester process.
-• The Pagerank and Siterank (multithreaded) algorithms respectively reduce the score of pages and sites reached through the same second-level domain in order to improve the quality of search engine results.
-• More score to web pages that change contents frequently.
-• Less relevance to web documents that contain many hypertext links in the face of little content.
-• C-Ares libray https://c-ares.org/ in place of ADNS.
+List of some improvements or changes.
 • Improvements for robots.txt files.
 • Improvements for "Chunked Transfer Encoding".
-• Optimized and modified html4 parser (html5 beta) to convert downloaded web pages into plain text, in order to greatly increase the overall performance of the search engine.
-• Text analysis to send at the search engine the terms with a different score according to their position on the web page or the type of html tags in which they are enclosed.
+• C-Ares libray https://c-ares.org/ in place of ADNS.
 • Strict control of URL rewrite loops during downloads.
-• Make more frequent downloads of constantly updated web pages (Local Sensitive Hashing).
+• Gatherer process "integrated" into the Harvester process.
+• Domain names and keywords split only if the result is related to the document content.
+• More score and frequent downloads of constantly updated web pages (Local Sensitive Hashing).
+• Less relevance to web documents that contain many hypertext links in the face of little content.
+• Converting of the internal indexes (Linear Probing) and data storages from single to distributed in order to work in multithread.
+• Text analysis to send at the search engine the terms with a different score according to their position on the web page or the type of html tags in which they are enclosed.
+• Connector use SQL language for realtime indexes of the OpenSource C++ Sphinx (https://sphinxsearch.com/) or if preferred Manticore (https://manticoresearch.com/) Search Engines.
+• Optimized and modified html4 parser (html5 beta) to convert downloaded web pages into plain text, in order to greatly increase the overall performance of the search engine by reducing storage space.
+• By introducing the concept of DomainId, the Pagerank and Siterank (multithreaded) algorithms respectively reduce the score of pages and sites reached through the same second-level domain in order to improve the quality of search engine results.
 
 The code was developed always using tools like Gdb and Valgrind to avoid making mistakes like:
 - memory leaks
