@@ -29,8 +29,8 @@ List of some improvements or changes.
 • Less relevance to web documents that contain many hypertext links in the face of little content.
 • Converting of the internal indexes (Linear Probing) and data storages from single to distributed in order to work in multithread.
 • Text analysis to send at the search engine the terms with a different score according the type of html tags in which they are enclosed.
-• SQL language for realtime indexes of the OpenSource C++ Sphinx (https://sphinxsearch.com/) or Manticore (https://manticoresearch.com/) Search Engines.
 • Html4 parser convert downloaded web pages into plain text, in order to greatly increase the overall performance of the search engine by reducing storage space.
+• Connector use SQL language for realtime indexes of the OpenSource C++ Sphinx (https://sphinxsearch.com/) or Manticore (https://manticoresearch.com/) Search Engines.
 • By introducing the concept of DomainId, the Pagerank and Siterank (multithreaded) algorithms respectively reduce the score of pages and sites reached through the same second-level domain in order to improve the quality of search engine results.
 
 The code was developed always using tools like Gdb and Valgrind to avoid making mistakes like:
