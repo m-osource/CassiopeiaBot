@@ -28,9 +28,9 @@ List of some improvements or changes.
 • Domain names and keywords split only if the result is related to the document content.
 • Less relevance to web documents that contain many hypertext links in the face of little content.
 • Converting of the internal indexes (Linear Probing) and data storages from single to distributed in order to work in multithread.
+• Text analysis to send at the search engine the terms with a different score according the type of html tags in which they are enclosed.
 • SQL language for realtime indexes of the OpenSource C++ Sphinx (https://sphinxsearch.com/) or if preferred Manticore (https://manticoresearch.com/) Search Engines.
-• Text analysis to send at the search engine the terms with a different score according to their position on the web page or the type of html tags in which they are enclosed.
-• Optimized and modified html4 parser (html5 beta) to convert downloaded web pages into plain text, in order to greatly increase the overall performance of the search engine by reducing storage space.
+• Html4 parser (html5 beta) convert downloaded web pages into plain text, in order to greatly increase the overall performance of the search engine by reducing storage space.
 • By introducing the concept of DomainId, the Pagerank and Siterank (multithreaded) algorithms respectively reduce the score of pages and sites reached through the same second-level domain in order to improve the quality of search engine results.
 
 The code was developed always using tools like Gdb and Valgrind to avoid making mistakes like:
