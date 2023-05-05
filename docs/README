@@ -23,7 +23,7 @@ List of some improvements or changes.
 • C-Ares libray https://c-ares.org/ in place of ADNS.
 • Strict control of URL rewrite loops during downloads.
 • Gatherer process "integrated" into the Harvester process.
-• Improvements for correct interpretation of robots TXT/RDF/XML files.
+• Improvements for correct interpretation of robots.txt files.
 • More score and frequent downloads of constantly updated web pages (EN/IT).
 • Domain names and keywords split only if the result is related to the document content.
 • Less relevance to web documents that contain many hypertext links in the face of little content.
