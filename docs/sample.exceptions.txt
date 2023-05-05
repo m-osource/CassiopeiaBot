@@ -1,0 +1,11 @@
+AT & T => AT&T
+AT&T => AT&T
+Standarten   Fuehrer => standartenfuhrer
+Standarten Fuhrer => standartenfuhrer
+C++ => cplusplus
+c++ => cplusplus
+C plus plus => cplusplus
+& => &amp;
+[ => "square brackets"
+] => "square brackets"
+♦ => ♦
