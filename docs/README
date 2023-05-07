@@ -4,7 +4,7 @@ It is a fork of the WIRE-Nic open source project which is itself a fork of the W
 (Web Information Retrieval Environment) that was developed by Center for Web Research from University of Chile.
 More information about it can be found at  http://www.cwr.cl/projects/WIRE/ and https://sourceforge.net/projects/wire-nic/.
 
-It has been customized to be a selective crawler for geographical area (Sardinia - Italy -) but it is also possible to make it behave differently.
+It has been customized to be a selective crawler by geographical area (Sardinia - Italy -) so don't be surprised if in its code you find terms such as sardegna, shardana, nuraghe and so on but in any case, with some precautions it is also possible to make it behave in a different.
 Before proceeding with the development of CassiopeiaBot, all possible bug fixes were applied to the software and for technical reasons some features have been disabled from the original project.
 
 Here are the new features:
@@ -14,7 +14,7 @@ Here are the new features:
 • Support to UTF-8 multibyte characters.
 • Parsing of PDF, FEED/ATOM and FEED/RSS.
 • Language detection and appropriate word stemming.
-• Analysis of sitemap files written in RDF/XML format.
+• Analysis of sitemap files written in XML format.
 • Thematic (IT) detection of web pages in order to assign an appropriate score.
 • Interactive console cbot-info-shell with auto-complete function to consult crawler metadata and plain text of downloaded web pages.
 
@@ -40,7 +40,6 @@ The code was developed always using tools like Gdb and Valgrind to avoid making 
 
 The project was discontinued in 2017 but successfully tested several times until 2016 under a Fedora 23 distro, unfortunately there was no time to add features reported in the TODO file.
 
-CassiopeiaBot has been optimized to search almost exclusively for sites in Sardinia, so don't be surprised if you find terms like sardinia, shardana, nuraghe and so on.
 It will be necessary to dedicate oneself to update some parts of the code to the new libraries and integrate the new functions according to the changes in the WEB that have taken place in recent years.
  
 Marco <workwheat09@gmail.com>
