@@ -1,0 +1,8 @@
+.it
+.com
+.info
+.net
+.eu
+.va
+.org
+.sm
